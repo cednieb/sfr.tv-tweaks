@@ -1,0 +1,127 @@
+0.35: 
+Ajout d'un bandeau qui annonce le chargement du script qui disparait au bout de 5 secondes.
+Les div cdk-overlay-container sont supprimés plutôt que d'être envoyés en arrière plan.
+Ajout du support de l'apparition des "Session expiréeé" ou  des erreurs "B-16" qui ne sont pas bloquantes à première vue sur les replays.     
+Rechargement de la page pour toutes les autres erreurs.
+Ajout d'un événement "touche enfoncée" qui fait apparaître le bandeau.
+Ajout des commentaires.
+
+0.36: 
+Ajout d'un événement "touche relachée" qui fait apparaître le bandeau (maintenir la touche rendait impossible la suppression du bandeau).
+
+0.37: 
+Mise à jour des commentaires.
+
+0.40:
+Ajout de la navigation avec le pavé numérique 
+-- "+" pour la chaine suivante 
+-- "-" pour la précédente 
+-- avec les chiffres comme une télécommande
+-- la touche entrée numérique affiche une mosaïque des vignettes (cliquer pour changer la chaine)
+
+Problème connu avec le plein écran .
+
+0.41:
+Tout fonctionne en plein écran
+
+0.42:
+Problème résolu après la connexion 
+Traitement de l'url qui peut contenir ";play=true"
+
+0.44:
+Gestion du volume sonore avec les flèches , haut pour augmenter , bas pour diminuer
+Passer en mode plein écran ou fenêtré avec le point du pavé numérique
+
+0.45:
+Ajout des vignettes colorisées ( sauf pour certaines qui sont remplacées par leur version noir et blanc )
+Diverses modifications du code ( optimisation de channelsInfos2 , refonte de la fonction de récupération des vignettes , ...)
+
+0.46:
+Ajout d'un garde-fou empêchant de zapper sur une chaine inexistante
+
+0.47:
+Gestion de l'erreur "session expirée" avec une reconnexion automatique (à configurer chez vous)
+
+Dans cette version , j'essaye également de détecter les problèmes de lecture (compliqué à mettre en oeuvre ,
+il faut que j'attende que l'erreur survienne pour pouvoir comprendre et essayer d'écrire un bout de code à surveiller la prochaine fois que çà recommence) 
+
+Quelques pistes : les événements de la balise vidéo (progress par exemple) , la barre de temps (player__seek-bar) 
+
+Je reste bien entendu à l'écoute de vos remontées de bug dans la mesure de mon possible
+
+--- Comment configurer la reconnexion automatique ?
+------ Vos infos sont enregistrées localement (https://developer.mozilla.org/fr/docs/Web/API/Window/localStorage)
+------ Personne ne peut y accéder
+------ Regarder une chaine
+------ Se déconnecter au cas où 
+------ Laisser le script s'exécuter , il vous redirigera vers la page de connexion
+------ Cliquer en dehors des champs de saisie
+------ Taper 0001
+------ Un champ de saisie apparait pour le nom d'utilisateur à enregistrer
+------ Remplir et cliquer sur ok
+------ Un champ de saisie apparait pour le mot de passe à enregistrer
+------ Remplir et cliquer sur ok
+------ Attendre un peu , 3s par défaut (mainLoopDelay = 3000;)
+------ Le bouton devrait être cliqué automatiquement ( Parfois vous aurez un CAPTCHA )
+------ La page de la chaine se charge
+
+--- Tester mes infos saisies
+------ Regarder la tv
+------ Se déconnecter
+------ La redirection s'effectue 
+------ Vos infos se chargent automatiquement
+ 
+--- Vérifier mes infos saisies     
+------ Regarder la tv
+------ Se déconnecter
+------ La redirection s'effectue 
+------ Taper 0002
+------ Vos infos apparaissent
+
+--- Effacer mes infos
+------ Regarder la tv
+------ Se déconnecter
+------ La redirection s'effectue 
+------ Taper 0000
+------ Vos infos sont effacées
+
+0.50:
+Gestion de l'app qui ne se charge pas (erreur B-400)
+
+0.51:
+Suivi des erreurs , appuyer sur "L" pour afficher ou fermer le tableau
+
+0.52:
+Possibilité de définir le volume de départ
+Ajout d'une interface de configuration , appuyer sur "C"
+( sauvegarder en appuyant de nouveau sur "C" )
+
+0.53:
+Possibilité de zapper avec les chiffres
+Ajout d'une interface de configuration du tableau de vignettes , appuyer sur "F" 
+( cliquer sur la chaine pour ajouter ou retirer , sauvegarder en appuyant de nouveau sur "F"  )
+Chaine suivante avec la flèche droite
+Chaine précédente avec la flèche gauche
+Plein écran avec la touche majuscule gauche
+Affiche ou ferme la mosaïque de vignettes avec la touche contrôle gauche
+
+0.54
+Suite à la mise à jour , la fonction plein écran ne fonctionnait plus 
+Pour l'interface de configuration du tableau de vignettes , appuyer sur "V" 
+
+Rappel :
+Navigation au clavier
+-- "+" ou la flèche droite pour la chaine suivante
+-- "-" ou la flèche gauche pour la précédente
+-- Avec les chiffres ( pavé numérique ou pas ) comme une télécommande
+-- La touche entrée numérique ou la touche contrôle gauche affiche ou ferme une mosaïque de vignettes (cliquer pour changer la chaine)
+-- Passer en mode plein écran ou fenêtré avec le point du pavé numérique ou la touche majuscule gauche
+
+Gestion du volume sonore avec les flèches , haut pour augmenter , bas pour diminuer 
+
+Interface de configuration du tableau de vignettes , appuyer sur "V" 
+Interface de configuration , appuyer sur C
+Logs erreurs , appuyer sur L
+
+A faire :
+Possibilité d'insérer un code pour personnaliser la "mosaïque"
