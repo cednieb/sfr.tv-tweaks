@@ -112,10 +112,12 @@ Pour l'interface de configuration du tableau de vignettes , appuyer sur "V"
 0.58
 0.59
 0.60
-0.61
 Mise à jour des chaines et du format des url
 Corrections mineures
 Diverses améliorations
+
+0.61
+Fix auto connect
 
 
 
