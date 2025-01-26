@@ -1,6 +1,6 @@
 
 <br/>C'est un userscript à charger avec une extension dans un navigateur WEB.
-<br/>
+<br/>Gerer certaines erreurs, personalisation de l'interface utilisateur.
 <br/>
 
 # Navigation au clavier
