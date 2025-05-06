@@ -141,6 +141,10 @@ A fin de pouvoir utiliser l'interface plus simplement avec la souris, en la boug
 Ils disparaissent au bout de 5 secondes
 Amélioration du code en ajoutant des fonctions pour les événements du clavier.
 
+0.66
+Ajout d'une variable déterminant le délai avant de supprimer le menu liste/pleinécran et le tableau de vignettes
+
+
 Rappel :
 Navigation au clavier
 -- "+" ou la flèche droite pour la chaine suivante
