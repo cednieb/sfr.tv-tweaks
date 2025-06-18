@@ -1,13 +1,13 @@
 0.35: 
 Ajout d'un bandeau qui annonce le chargement du script qui disparait au bout de 5 secondes.
 Les div cdk-overlay-container sont supprimés plutôt que d'être envoyés en arrière plan.
-Ajout du support de l'apparition des "Session expiréeé" ou  des erreurs "B-16" qui ne sont pas bloquantes à première vue sur les replays.     
+Ajout du support de l'apparition des "Session expirée" ou  des erreurs "B-16" qui ne sont pas bloquantes à première vue sur les replays.     
 Rechargement de la page pour toutes les autres erreurs.
 Ajout d'un événement "touche enfoncée" qui fait apparaître le bandeau.
 Ajout des commentaires.
 
 0.36: 
-Ajout d'un événement "touche relachée" qui fait apparaître le bandeau (maintenir la touche rendait impossible la suppression du bandeau).
+Ajout d'un événement "touche relâchée" qui fait apparaître le bandeau (maintenir la touche rendait impossible la suppression du bandeau).
 
 0.37: 
 Mise à jour des commentaires.
@@ -123,19 +123,19 @@ Fix auto connect
 Mise à jour des url  (Paramount)
 
 0.65
-Sur firefox, possibilité d'activer le plein écran au lancement
-// Activer le plein écran au changement de la chaine
-// Uniquement sur Firefox
-// Modifier les parametres en tapant dans la barre d'adresse about:config
-// Modifier la valeur full-screen-api.allow-trusted-requests-only en false
-// Regarder une chaine
-// Appuyer sur "c"
-// Mettre la valeur "plein écran sur 1
-// Appuyer de nouveau sur "c"
-// Changer de chaine
-// Le programme se lance en plein écran
+Sur firefox, possibilité d'activer le plein écran au changement de la chaine
+Activer le plein écran 
+Uniquement sur Firefox
+Modifier les paramètres en tapant dans la barre d'adresse about:config
+Modifier la valeur full-screen-api.allow-trusted-requests-only en false
+Regarder une chaine
+Appuyer sur "c"
+Mettre la valeur "plein écran sur 1
+Appuyer de nouveau sur "c"
+Changer de chaine
+Le programme se lance en plein écran
 
-Au passage plein ecran <-> fenêtre, les contrôles du lecteur et le pointeur de la souris sont cachés
+Au passage plein écran <-> fenêtre, les contrôles du lecteur et le pointeur de la souris sont cachés
 Au mouvement de la souris, ils réapparaissent
 A fin de pouvoir utiliser l'interface plus simplement avec la souris, en la bougeant, deux boutons sont ajoutés pour afficher la liste des chaines et switcher entre plein écran et fenêtre
 Ils disparaissent au bout de 5 secondes
@@ -144,6 +144,12 @@ Amélioration du code en ajoutant des fonctions pour les événements du clavier
 0.66
 Ajout d'une variable déterminant le délai avant de supprimer le menu liste/pleinécran et le tableau de vignettes
 
+0.67
+Mis à jour des canaux
+Ajout de 3 boutons supplémentaires au mouvement de la souris
+
+0.68
+Images en guise de menu au mouvement de la souris
 
 Rappel :
 Navigation au clavier
